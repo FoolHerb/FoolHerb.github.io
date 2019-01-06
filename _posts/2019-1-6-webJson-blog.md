@@ -28,18 +28,18 @@ author: FoolHerb
  $.ajax({
  		type:"post",
  		url: page,
-        	data:jsonData,
-        	async:false,
-        	cache : false,
-             	dataType:"json",
-             	contentType : "application/json;charset=UTF-8",
+ 		data:jsonData,
+		async:false,
+ 		cache : false,
+ 		dataType:"json",
+		contentType : "application/json;charset=UTF-8",
 	   	success: function(result){
-                	console,log(JSON.stringify(result));
+			console,log(JSON.stringify(result));
         	},
-        	error:function(error){
-        		console,log(JSON.stringify(error));
-        	}
-       });
+		error:function(error){
+			console,log(JSON.stringify(error));
+		}
+	});
 ```
 
 返回值为200，却在error部分输出数据，因为它认为返回的数据不是标准的json数据，可修改为下边代码。
