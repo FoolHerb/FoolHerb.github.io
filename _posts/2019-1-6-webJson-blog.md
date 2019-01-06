@@ -26,19 +26,19 @@ author: FoolHerb
 
 ```js
  $.ajax({
-        		 type:"post",
-        	   url: page,
-        	   data:jsonData,
-        	   async:false,
-        	   cache : false,
-             dataType:"json",
-             contentType : "application/json;charset=UTF-8",
-        	   success: function(result){
-                console,log(JSON.stringify(result));
-        	   },
-        	   error:function(error){
-        		    console,log(JSON.stringify(error));
-        	   }
+ 		type:"post",
+ 		url: page,
+        	data:jsonData,
+        	async:false,
+        	cache : false,
+             	dataType:"json",
+             	contentType : "application/json;charset=UTF-8",
+	   	success: function(result){
+                	console,log(JSON.stringify(result));
+        	},
+        	error:function(error){
+        		console,log(JSON.stringify(error));
+        	}
        });
 ```
 
